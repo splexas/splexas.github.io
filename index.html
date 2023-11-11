@@ -10,23 +10,41 @@
         .social-container {
             border: 2px solid white;
             display: inline-block;
-	    padding: 1%;
+			padding: 1%;
         }
         p {
             font-size: 175%;
             margin: 0;
+			font-family: monospace;
         }
+		
+		.rgb-text {
+			animation: rgb_animation 5s infinite;
+		}
+		
+		@keyframes rgb_animation {
+            0% { color: red; }
+            33% { color: lime; }
+            66% { color: blue; }
+            100% { color: red; }
+        }
+		
         i {
             color: white;
             display: inline-block;
             margin-right: 10px;
         }
+		a {
+			color: white;
+		}
     </style>
 </head>
 
 <body>
     <div class="social-container">
-        <p style="font-size:200%"><font color="white"><u>Socials</u></font></p>
+        <div class="rgb-text">
+			<p style="font-size:200%;margin-bottom: 10px"><u>Socials</u></p>
+		</div>
         <p><i class="fa-brands fa-discord"></i> <a href="https://discord.gg/ev2Kn5QsMT">Discord</a></p>
         <p><i class="fa-brands fa-github"></i> <a href="https://github.com/splexas">GitHub</a></p>
     </div>
